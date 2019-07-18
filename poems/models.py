@@ -4,3 +4,4 @@ from django.db import models
 class Poem (models.Model):
     text = models.TextField()
     ended = models.BooleanField(default=False)
+    
