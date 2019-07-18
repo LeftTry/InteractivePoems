@@ -1,50 +1,5 @@
-<html>
-<head>
-<TITLE>Коллективный разум:Алиса в стране чудес-1 глава</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Коллективный разум</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Читать <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Написать</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="container">
-<style>
-H1 {
-padding-left : 20px;
-font-family : Verdana, Arial, Helvetica, sans-serif;
-}
-p {
-font-family : cursive;
-}
-textarea {
-font-family : cursive;
-}
-li{
-font-family : cursive;
-}
-h2 {
-padding-left : 20px;
-font-family : Verdana, Arial, Helvetica, sans-serif;
-}
-     span {
-        font-family: cursive;
-        color: red;
-
-    }
-</style>
+{% extends 'base.html' %}
+{% block content %}
 <H1>Алиса в стране чудес</H1>
 <h2>Глава 1</h2>
 <p> <span>А</span>лисе  наскучило  сидеть с сестрой без дела на берегу реки; разок-другой она заглянула в книжку, которую читала сестра,  но там не было ни
@@ -73,6 +28,4 @@ font-family : Verdana, Arial, Helvetica, sans-serif;
 <button type="button" class="btn btn-secondary btn-sm">Закончить текст</button>
     <button type="button" class="btn btn-warning">Создать новый текст</button>
 <button  style="float: right;" type="button" class="btn btn-info" >К 2 главе</button>
- </div>
-</body>
-</html>
+{% endblock %}

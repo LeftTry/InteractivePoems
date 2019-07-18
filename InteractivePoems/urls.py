@@ -20,5 +20,5 @@ from poems.views import read, write
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', write),
-    path('rot', read)
+    path('rot', read),
 ]
