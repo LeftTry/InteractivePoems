@@ -1,0 +1,81 @@
+<html>
+<head>
+<TITLE>Коллективный разум:Алиса в стране чудес-1 глава</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="">Коллективный разум</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/rot">Читать <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/">Написать</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+<style>
+H1 {
+padding-left : 20px;
+font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+p {
+font-family : cursive;
+}
+textarea {
+font-family : cursive;
+}
+li{
+font-family : cursive;
+}
+h2 {
+padding-left : 20px;
+font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+    span {
+        font-family: cursive;
+        color: red;
+        size: 100px;
+    }
+</style>
+<H1>Алиса в стране чудес</H1>
+<h2>Глава 1</h2>
+<p> <span>А</span>лисе  наскучило  сидеть с сестрой без дела на берегу реки; разок-другой она заглянула в книжку, которую читала сестра,  но там не было ни
+<p>картинок, ни разговоров.<ul type="circle">
+    <p> <li>Что толку в книжке, -- подумала Алиса, -- если в ней нет
+<p>ни картинок, ни разговоров?</li></ul>
+    <p>Она  сидела  и  размышляла, не встать ли ей и не нарвать ли цветов для венка; мысли ее текли медленно и несвязно -- от жары ее клонило в
+    <p>сон. Конечно, сплести венок было бы очень приятно, но стоит ли ради этого подыматься?
+   <p> Вдруг пробежал {{ poem.text | linebreaksbr}}
+
+    <h3>Продолжить рассказ:</h3>
+  <form method="post">
+      {% csrf_token %}
+   <div class="form-group">
+   <div class="row">
+    <div class="col">
+	<label for="Name">Ваше имя:</label>
+      <input style="width : 300px;" type="text" class="form-control" id="Name" placeholder="Ваше имя">
+    </div>
+	</div>
+    <small id="emailHelp" class="form-text text-muted">Это нужно для того чтобы другие пользоваvтели могли видеть кто изменил данный текст.</small><br>
+       <input type="hidden" value="{{ poem.id }}" name="id" />
+	<label for="exampleFormControlTextarea1">Ваше продолжение повести:</label>
+    <textarea rows=15 class="form-control"  name="text1" id="exampleFormControlTextarea1" rows="3"></textarea>
+ </div>
+      <div>
+ <input type="submit" class="btn btn-primary" value="Добавить абзац" name="button" />
+       <input type="submit" class="btn btn-secondary" value="Закончить текст" name="button" />
+    <input type="submit" class="btn btn-warning" value="Создать новый текст" name="button" />
+<button  style="float: right;" type="button" class="btn btn-info" >К 2 главе</button>
+        </div>
+</form>
+</body>
+</html>
